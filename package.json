@@ -1,0 +1,26 @@
+{
+  "name": "js-map-benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:go": "go build -o build/map src/map.go",
+    "bench": "hyperfine \"node build/constructor.js\" \"node build/manySetCall.js\" \"node build/object.js\" \"node build/separatedData.js\"",
+    "bench:go": "hyperfine \"node build/constructor.js\" \"node build/manySetCall.js\" \"node build/object.js\" \"node build/separatedData.js\" \"build/map\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boarwell/js-map-benchmark.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boarwell/js-map-benchmark/issues"
+  },
+  "homepage": "https://github.com/boarwell/js-map-benchmark#readme",
+  "devDependencies": {
+    "typescript": "^3.7.4"
+  }
+}
