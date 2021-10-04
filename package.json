@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/boarwell/js-map-benchmark#readme",
   "devDependencies": {
-    "typescript": "^4.4.2"
+    "typescript": "^4.4.3"
   }
 }
